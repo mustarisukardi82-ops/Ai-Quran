@@ -20,3 +20,30 @@ pre{
   padding:15px;
   white-space:pre-wrap;
 }
+:root{
+  --hijau:#0b3d2e;
+  --emas:#c9a23f;
+  --gelap:#06271d;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family: "Scheherazade New", serif;
+  background:var(--hijau); color:#f9f3d1;
+}
+header{
+  padding:16px; text-align:center;
+  background:linear-gradient(180deg,#0f5a43,#0b3d2e);
+}
+main{padding:16px; max-width:900px; margin:auto}
+input,button{
+  width:100%; padding:12px; margin:6px 0;
+  border-radius:8px; border:none; font-size:16px;
+}
+button{background:var(--emas); cursor:pointer}
+.card{
+  background:var(--gelap); padding:14px; border-radius:10px; margin:10px 0
+}
+.arab{font-size:26px; line-height:1.8; text-align:right}
+.bm{opacity:.95}
+hr{border:0; border-top:1px solid #1e6b54}
+footer{opacity:.7; text-align:center; padding:10px}
