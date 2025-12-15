@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="ms">
 <head>
-<meta charset="UTF-8">
-<title>AI Quran</title>
-<link rel="manifest" href="manifest.json">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Quran</title>
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1>🕌 AI Quran</h1>
-<p>Tanya tentang Al-Quran</p>
+  <h1>🕌 AI Quran</h1>
+  <p>Tanya tentang Al-Quran</p>
 
-<input id="soalan" placeholder="Contoh: Maksud Surah Al-Mulk ayat 1">
-<button onclick="tanya()">Tanya</button>
+  <input id="soalan" placeholder="Contoh: Maksud Surah Al-Mulk ayat 1">
+  <button onclick="tanya()">Tanya</button>
 
-<div id="hasil" class="hasil">
-  <pre id="jawapan">Sila cari ayat atau buat pertanyaan.</pre>
-</div>
+  <div id="hasil" class="hasil">
+    <pre id="jawapan">Sila cari ayat...</pre>
+  </div>
 
-<script src="app.js"></script>
+  <hr>
+
+  <h3>Cari Ayat</h3>
+  <input id="cari" placeholder="sabar / rezeki / syurga">
+  <button onclick="cari()">Cari Ayat</button>
+
+  <audio controls src="https://everyayah.com/data/Abdul_Basit_Mujawwad_128kbps/067001.mp3"></audio>
+
+  <script src="app.js"></script>
+
 </body>
 </html>
-<audio controls src="audio/67_1.mp3"></audio>
-<input id="soalan" placeholder="Cari: sabar / rezeki / syurga">
-<button onclick="cari()">Cari Ayat</button>
-<pre id="jawapan"></pre>
-<audio controls
-src="https://everyayah.com/data/Alafasy_128kbps/067001.mp3">
-</audio>
-<select id="mode">
-  <option value="dewasa">Mod Dewasa</option>
-  <option value="kanak">Mod Kanak-kanak</option>
-</select>
