@@ -1,0 +1,22 @@
+body{
+  font-family: serif;
+  background:#0b3d2e;
+  color:#f9e6a2;
+  text-align:center;
+  padding:20px;
+}
+input{
+  width:90%;
+  padding:10px;
+}
+button{
+  background:#c9a23f;
+  border:none;
+  padding:10px 20px;
+  cursor:pointer;
+}
+pre{
+  background:#06271d;
+  padding:15px;
+  white-space:pre-wrap;
+}
