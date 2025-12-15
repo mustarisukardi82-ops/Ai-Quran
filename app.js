@@ -60,3 +60,14 @@ ${h.bm}
 <hr>
 `).join("");
 }
+const mode = document.getElementById("mode").value;
+const ringkas = mode==="kanak";
+...
+out.innerHTML = hasil.slice(0,5).map(h=>`
+<div class="card">
+<b>${h.ref}</b>
+<div class="arab">${h.arab}</div>
+<div class="bm">${ringkas ? h.bm.split('.')[0] : h.bm}</div>
+<audio controls src="https://everyayah.com/data/Alafasy_128kbps/${h.ref.split(':')[0].padStart(3,'0')}${h.ref.split(':')[1].padStart(3,'0')}.mp3"></audio>
+</div>
+`).join("");
